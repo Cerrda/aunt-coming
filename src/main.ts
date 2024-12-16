@@ -9,9 +9,4 @@ import '@unocss/reset/tailwind.css'
 import 'virtual:uno.css'
 import './styles/index'
 
-// 解决 naive 的样式被覆盖的问题
-const meta = document.createElement('meta')
-meta.name = 'naive-ui-style'
-document.head.appendChild(meta)
-
 createApp(App).use(createPinia()).use(router).use(MotionPlugin).use(autoAnimatePlugin).mount('#app')

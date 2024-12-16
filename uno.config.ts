@@ -1,6 +1,5 @@
 import presetRemToPx from '@unocss/preset-rem-to-px'
 import { defineConfig, presetIcons, presetUno } from 'unocss'
-import { themeOverrides } from './configs/theme'
 
 export default defineConfig({
   shortcuts: [
@@ -10,11 +9,6 @@ export default defineConfig({
   rules: [[/^flex-([.\d]+)$/, ([_, num]) => ({ flex: `${num}` })]],
   theme: {
     colors: {
-      primary: themeOverrides.common.primaryColor,
-      hover: {
-        primary: themeOverrides.common.primaryColorHover,
-        error: themeOverrides.common.errorColorHover,
-      },
     },
   },
   presets: [

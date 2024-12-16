@@ -9,18 +9,9 @@ declare module 'vue' {
   export interface GlobalComponents {
     BlurReveal: typeof import('./../src/components/blur-reveal.vue')['default']
     LetterPullup: typeof import('./../src/components/letter-pullup.vue')['default']
-    NaiveProvider: typeof import('./../src/components/naive-provider.vue')['default']
-    NButton: typeof import('naive-ui')['NButton']
-    NCard: typeof import('naive-ui')['NCard']
-    NConfigProvider: typeof import('naive-ui')['NConfigProvider']
-    NDialogProvider: typeof import('naive-ui')['NDialogProvider']
-    NLoadingBarProvider: typeof import('naive-ui')['NLoadingBarProvider']
-    NMessageProvider: typeof import('naive-ui')['NMessageProvider']
-    NNotificationProvider: typeof import('naive-ui')['NNotificationProvider']
-    NThemeEditor: typeof import('naive-ui')['NThemeEditor']
-    Permission: typeof import('./../src/components/permission.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TextGenerateEffect: typeof import('./../src/components/text-generate-effect.vue')['default']
+    VanButton: typeof import('vant/es')['Button']
   }
 }
