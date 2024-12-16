@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "kisstkondoros.vscode-gutter-preview",
+    "MariusAlchimavicius.json-to-ts",
+    "stylelint.vscode-stylelint",
+    "EditorConfig.EditorConfig",
+    "naumovs.color-highlight",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorc",
+    "csstools.postcss",
+    "antfu.iconify",
+    "antfu.unocss",
+    "simonhe.unot",
+    "Vue.volar"
+  ]
+}
