@@ -1,1 +1,1 @@
-export * from './global.scss'
+export * from './theme.scss'

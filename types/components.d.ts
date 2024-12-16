@@ -9,8 +9,10 @@ declare module 'vue' {
   export interface GlobalComponents {
     BlurReveal: typeof import('./../src/components/blur-reveal.vue')['default']
     LetterPullup: typeof import('./../src/components/letter-pullup.vue')['default']
+    NavBar: typeof import('./../src/components/nav-bar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    TabBar: typeof import('./../src/components/tab-bar.vue')['default']
     TextGenerateEffect: typeof import('./../src/components/text-generate-effect.vue')['default']
     VanButton: typeof import('vant/es')['Button']
   }

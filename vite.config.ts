@@ -54,7 +54,7 @@ export default defineConfig({
     postcss: {
       plugins: [
         postcssPxConversion({
-          viewportWidth: 375,
+          viewportWidth: 430,
         }),
       ],
     },
