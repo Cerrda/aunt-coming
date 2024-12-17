@@ -23,6 +23,7 @@ export default antfu({
     '/bin',
     'node_modules',
     'Dockerfile',
+    'src/assets/lottie/*',
   ],
   rules: {
     'node/prefer-global/process': 'off',

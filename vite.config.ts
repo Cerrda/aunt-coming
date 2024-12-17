@@ -7,12 +7,13 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig, type PluginOption } from 'vite'
 import viteCompression from 'vite-plugin-compression'
-import vueDevTools from 'vite-plugin-vue-devtools'
+// import vueDevTools from 'vite-plugin-vue-devtools'
 import { compress, dropConsole, sourcemap } from './configs/build'
+import { DESIGN_WIDTH } from './configs/ui'
 
 const plugins: PluginOption = [
   vue(),
-  vueDevTools(),
+  // vueDevTools(),
   UnoCSS(),
   AutoImport({
     imports: [
@@ -54,7 +55,7 @@ export default defineConfig({
     postcss: {
       plugins: [
         postcssPxConversion({
-          viewportWidth: 430,
+          viewportWidth: DESIGN_WIDTH,
         }),
       ],
     },

@@ -3,4 +3,13 @@
   --van-primary-color: #fe4c86;
   --van-secondary-color: #ffec3d;
   --van-gap: 16px;
+  --van-tabbar-height: 75px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#app {
+  .van-picker__mask {
+    border-radius: var(--van-gap);
+  }
 }

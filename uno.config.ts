@@ -9,6 +9,16 @@ export default defineConfig({
   rules: [[/^flex-([.\d]+)$/, ([_, num]) => ({ flex: `${num}` })]],
   theme: {
     colors: {
+      primary: 'var(--van-primary-color)',
+      primaryLight: 'var(--van-primary-light-color)',
+      secondary: 'var(--van-secondary-color)',
+    },
+    spacing: {
+      normal: 'var(--van-gap)',
+      tabbar: 'var(--van-tabbar-height)',
+    },
+    borderRadius: {
+      normal: 'var(--van-gap)',
     },
   },
   presets: [

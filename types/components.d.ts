@@ -14,6 +14,6 @@ declare module 'vue' {
     RouterView: typeof import('vue-router')['RouterView']
     TabBar: typeof import('./../src/components/tab-bar.vue')['default']
     TextGenerateEffect: typeof import('./../src/components/text-generate-effect.vue')['default']
-    VanButton: typeof import('vant/es')['Button']
+    VanDatePicker: typeof import('vant/es')['DatePicker']
   }
 }

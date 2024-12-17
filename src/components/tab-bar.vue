@@ -1,6 +1,6 @@
 <template>
   <div class="tab-bar">
-    <div class="tabs">
+    <div v-motion-slide-bottom class="tabs">
       <input id="tab-01" type="radio" name="tab" checked />
       <label for="tab-01" @click="$router.push({ name: 'Home' })">
         <svg>
@@ -91,10 +91,10 @@
   --primary-light: var(--van-primary-light-color);
   --secondary: var(--van-secondary-color);
   --width: calc(100% - 2 * var(--van-gap));
-  --height: 75px;
+  --height: var(--van-tabbar-height);
   --border-radius: var(--height);
 
-  height: calc(var(--height) + var(--van-gap));
+  // height: calc(var(--height) + var(--van-gap));
   .tabs {
     position: fixed;
     inset: var(--van-gap);
