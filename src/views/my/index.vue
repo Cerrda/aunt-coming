@@ -13,7 +13,7 @@ const element = ref()
 onMounted(() => {
   Lottie.loadAnimation({
     container: element.value,
-    renderer: 'svg',
+    renderer: 'canvas',
     loop: true,
     autoplay: true,
     path: getLottieUrl('girl.json'),
@@ -53,7 +53,7 @@ async function dateClick(year: string, date: string) {
 
 <template>
   <div class="h-full w-full flex flex-col items-center gap-normal rounded-normal shadow-[0_0_16px_rgba(65,72,86,0.1)]">
-    <div ref="element" class="m-t-10 w-200"></div>
+    <div ref="element" class="m-t-10 size-200"></div>
     <div class="w-full flex flex-1 flex-col overflow-auto p-x-16">
       <div
         v-for="item in Object.keys(data).reverse()" :key="item"

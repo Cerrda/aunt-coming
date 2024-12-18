@@ -14,7 +14,7 @@ let anim: AnimationItem | null = null
 onMounted(() => {
   anim = lottie.loadAnimation({
     container: element.value,
-    renderer: 'svg',
+    renderer: 'canvas',
     loop: false,
     autoplay: false,
     path: getLottieUrl('cat.json'),
@@ -25,7 +25,7 @@ const fires = ref()
 async function playFireworks() {
   lottie.loadAnimation({
     container: fires.value,
-    renderer: 'svg',
+    renderer: 'canvas',
     loop: true,
     autoplay: true,
     path: getLottieUrl('fire-works.json'),
@@ -69,10 +69,10 @@ function add() {
 
 <template>
   <div class="relative h-full w-full rounded-normal shadow-[0_0_16px_rgba(65,72,86,0.1)]">
-    <div ref="element" class="translate-y-60"></div>
+    <div ref="element" class="h-398 translate-y-60"></div>
     <div
       ref="fires"
-      class="absolute left-0 top-0 z-[-1]"
+      class="absolute left-0 top-0 z-[-1] h-530"
     ></div>
     <div class="absolute bottom-60 left-[50%] translate-x-[-50%]">
       <add-button
