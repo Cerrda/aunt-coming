@@ -18,11 +18,16 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
       - name: Install dependencies
-        run: npm install
+        run: pnpm install --prod
 
       - name: Build
-        run: npm run build
+        run: pnpm build
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v3
