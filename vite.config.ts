@@ -7,13 +7,12 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { defineConfig, type PluginOption } from 'vite'
 import viteCompression from 'vite-plugin-compression'
-// import vueDevTools from 'vite-plugin-vue-devtools'
+import { VitePWA } from 'vite-plugin-pwa'
 import { compress, dropConsole, sourcemap } from './configs/build'
 import { DESIGN_WIDTH } from './configs/ui'
 
 const plugins: PluginOption = [
   vue(),
-  // vueDevTools(),
   UnoCSS(),
   AutoImport({
     imports: [
@@ -29,6 +28,32 @@ const plugins: PluginOption = [
   Components({
     resolvers: [VantResolver()],
     dts: 'types/components.d.ts',
+  }),
+  VitePWA({
+    registerType: 'autoUpdate',
+    manifest: {
+      name: '姨妈来咯',
+      short_name: '姨妈来咯',
+      theme_color: '#ffffff',
+      icons: [
+        {
+          src: '/pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: '/pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+        {
+          src: '/pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+      ],
+    },
   }),
 ]
 if (compress) {
